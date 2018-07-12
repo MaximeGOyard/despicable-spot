@@ -6,7 +6,7 @@
  * Time: 16:03
  */
 
-namespace App\DataFixture;
+namespace App\DataFixtures;
 
 use App\Entity\User;
 use Doctrine\Bundle\FixturesBundle\Fixture;
