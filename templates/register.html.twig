@@ -1,6 +1,8 @@
-{% extends 'base.html.twig' %}
+{% extends 'layout.html.twig' %}
 
-{% block body %}
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+{% block content %}
+    <div>
     {{ form_start(form) }}
     {{ form_row(form.fullName) }}
     {{ form_row(form.username) }}
@@ -8,6 +10,7 @@
     {{ form_row(form.password.first) }}
     {{ form_row(form.password.second) }}
 
-    <button type="submit">S'inscrire !</button>
+    <button class="btn btn-primary" type="submit">S'inscrire !</button>
     {{ form_end(form) }}
+    </div>
 {% endblock %}
