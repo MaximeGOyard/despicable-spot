@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+{% block header %}
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark justify-content-center">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar3">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse w-100" id="collapsingNavbar3">
+                <ul class="navbar-nav w-100 justify-content-center pl-sm-5 ml-lg-0">
+                    <li class="nav-item mr-0">
+                        <a class="nav-link ml-0" href="{{ path('security_login') }}">Login</a>
+                    </li>
+                    <li class="nav-item  mr-0">
+                        Test 2
+                    </li>
+                    <li class="nav-item mr-0">
+                        Test3
+                    </li>
+                    <li class="nav-item mr-0">
+                        Test 3
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+{% endblock %}
